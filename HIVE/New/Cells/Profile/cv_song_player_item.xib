@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="cv_song_player_item" id="iN0-l3-epB" customClass="cv_song_player_item" customModule="HIVE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odg-Id-GN4">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic_widget_apple" translatesAutoresizingMaskIntoConstraints="NO" id="4ug-1P-F78">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                        </imageView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKo-mo-PFk">
+                            <rect key="frame" x="10" y="10" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="BNF-2f-tEL"/>
+                                <constraint firstAttribute="width" constant="44" id="IVj-wZ-yiT"/>
+                            </constraints>
+                            <state key="normal" image="mic_music_play"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUD-Tt-krB">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                            <connections>
+                                <action selector="opSelectSong:" destination="iN0-l3-epB" eventType="touchUpInside" id="he8-HX-jEh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="4ug-1P-F78" secondAttribute="bottom" id="0ty-LD-tUa"/>
+                        <constraint firstItem="TUD-Tt-krB" firstAttribute="top" secondItem="odg-Id-GN4" secondAttribute="top" id="ASJ-eo-snO"/>
+                        <constraint firstItem="KKo-mo-PFk" firstAttribute="centerY" secondItem="odg-Id-GN4" secondAttribute="centerY" id="Vsy-XJ-1Fk"/>
+                        <constraint firstItem="4ug-1P-F78" firstAttribute="leading" secondItem="odg-Id-GN4" secondAttribute="leading" id="Zd0-r6-wHJ"/>
+                        <constraint firstItem="TUD-Tt-krB" firstAttribute="leading" secondItem="odg-Id-GN4" secondAttribute="leading" id="dnf-9H-elZ"/>
+                        <constraint firstAttribute="trailing" secondItem="4ug-1P-F78" secondAttribute="trailing" id="eKg-Gl-YHm"/>
+                        <constraint firstItem="4ug-1P-F78" firstAttribute="top" secondItem="odg-Id-GN4" secondAttribute="top" id="ixk-kJ-7ix"/>
+                        <constraint firstItem="KKo-mo-PFk" firstAttribute="centerX" secondItem="odg-Id-GN4" secondAttribute="centerX" id="rNA-ec-fo1"/>
+                        <constraint firstAttribute="trailing" secondItem="TUD-Tt-krB" secondAttribute="trailing" id="uNT-H5-JyN"/>
+                        <constraint firstAttribute="bottom" secondItem="TUD-Tt-krB" secondAttribute="bottom" id="ypb-ur-vs0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="odg-Id-GN4" secondAttribute="bottom" id="ClV-GQ-4G7"/>
+                <constraint firstAttribute="trailing" secondItem="odg-Id-GN4" secondAttribute="trailing" id="M5X-e8-T2H"/>
+                <constraint firstItem="odg-Id-GN4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N51-5E-lUk"/>
+                <constraint firstItem="odg-Id-GN4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lod-m4-V5m"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn_play" destination="KKo-mo-PFk" id="JkE-dW-OGk"/>
+                <outlet property="img_song" destination="4ug-1P-F78" id="Brc-wU-NDe"/>
+                <outlet property="v_out" destination="odg-Id-GN4" id="Vv6-VY-fcH"/>
+            </connections>
+            <point key="canvasLocation" x="-59.420289855072468" y="136.60714285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mic_music_play" width="130" height="130"/>
+        <image name="mic_widget_apple" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

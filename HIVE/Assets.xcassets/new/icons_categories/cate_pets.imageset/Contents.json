@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "karsten-winegeart-5PVXkqt2s9k-unsplash@3x.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

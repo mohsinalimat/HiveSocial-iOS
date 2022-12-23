@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="cv_comment_more" id="iN0-l3-epB" customClass="cv_comment_more" customModule="HIVE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEi-q9-MpX">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d93-jI-ufz">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="6JY-cz-ISB">
+                                    <rect key="frame" x="32" y="23" width="22" height="22"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uc-1N-xvy">
+                                    <rect key="frame" x="62" y="24.5" width="121" height="19"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
+                                    <color key="textColor" name="col_lbl_post"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jZ-J5-3bw">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                                    <connections>
+                                        <action selector="opDeleteComment:" destination="iN0-l3-epB" eventType="touchUpInside" id="ppz-1z-TFh"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="6JY-cz-ISB" firstAttribute="leading" secondItem="d93-jI-ufz" secondAttribute="leading" constant="32" id="7xE-3c-so1"/>
+                                <constraint firstItem="9Uc-1N-xvy" firstAttribute="leading" secondItem="6JY-cz-ISB" secondAttribute="trailing" constant="8" id="OVX-Rw-6HT"/>
+                                <constraint firstItem="9Uc-1N-xvy" firstAttribute="centerY" secondItem="d93-jI-ufz" secondAttribute="centerY" id="Wi0-bD-72j"/>
+                                <constraint firstAttribute="trailing" secondItem="1jZ-J5-3bw" secondAttribute="trailing" id="YC9-zT-AoW"/>
+                                <constraint firstItem="1jZ-J5-3bw" firstAttribute="leading" secondItem="d93-jI-ufz" secondAttribute="leading" id="oMi-zz-k6Q"/>
+                                <constraint firstItem="1jZ-J5-3bw" firstAttribute="top" secondItem="d93-jI-ufz" secondAttribute="top" id="qJK-4W-eZo"/>
+                                <constraint firstAttribute="bottom" secondItem="1jZ-J5-3bw" secondAttribute="bottom" id="rTM-R2-QLk"/>
+                                <constraint firstItem="6JY-cz-ISB" firstAttribute="centerY" secondItem="d93-jI-ufz" secondAttribute="centerY" id="t1h-9j-FyX"/>
+                                <constraint firstAttribute="height" constant="68" id="ytz-wY-wKw"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMc-c6-Nvw">
+                            <rect key="frame" x="137" y="138" width="140" height="50"/>
+                            <color key="backgroundColor" name="col_black_white"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="140" id="JpL-sM-XmF"/>
+                                <constraint firstAttribute="height" constant="50" id="Kmj-NY-oqS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="16"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" name="col_btn_welcome"/>
+                            </state>
+                            <connections>
+                                <action selector="opDone:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZC9-WU-B17"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="d93-jI-ufz" firstAttribute="leading" secondItem="JEi-q9-MpX" secondAttribute="leading" id="1Gm-LO-PBH"/>
+                        <constraint firstItem="UMc-c6-Nvw" firstAttribute="top" secondItem="d93-jI-ufz" secondAttribute="bottom" constant="70" id="3sf-BV-tLw"/>
+                        <constraint firstItem="UMc-c6-Nvw" firstAttribute="centerX" secondItem="JEi-q9-MpX" secondAttribute="centerX" id="D4Y-CN-6oB"/>
+                        <constraint firstItem="d93-jI-ufz" firstAttribute="top" secondItem="JEi-q9-MpX" secondAttribute="top" id="JRV-hl-ui6"/>
+                        <constraint firstAttribute="trailing" secondItem="d93-jI-ufz" secondAttribute="trailing" id="LTc-a3-T9e"/>
+                        <constraint firstAttribute="height" constant="232" id="PgT-X7-76w"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="JEi-q9-MpX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7W9-KF-dfw"/>
+                <constraint firstAttribute="bottom" secondItem="JEi-q9-MpX" secondAttribute="bottom" id="hNY-Q3-eXh"/>
+                <constraint firstAttribute="trailing" secondItem="JEi-q9-MpX" secondAttribute="trailing" id="muh-Im-XEX"/>
+                <constraint firstItem="JEi-q9-MpX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="scz-6w-4A9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn_done" destination="UMc-c6-Nvw" id="AuB-NZ-MV1"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="289.95535714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mic_alert" width="22" height="22"/>
+        <namedColor name="col_black_white">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="col_btn_welcome">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="col_lbl_post">
+            <color red="0.50196078431372548" green="0.52941176470588236" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

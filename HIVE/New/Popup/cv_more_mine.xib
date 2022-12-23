@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="cv_more_mine" id="iN0-l3-epB" customClass="cv_more_mine" customModule="HIVE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKW-bb-te4">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9X-rR-NCa">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKd-aw-B03">
+                                    <rect key="frame" x="0.0" y="67.5" width="414" height="0.5"/>
+                                    <color key="backgroundColor" name="col_line_seperator"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="0.5" id="ys3-E6-Vr0"/>
+                                    </constraints>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="ceO-8v-stz">
+                                    <rect key="frame" x="32" y="23" width="22" height="22"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O71-Ev-dlH">
+                                    <rect key="frame" x="62" y="24.5" width="65" height="19"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
+                                    <color key="textColor" name="col_lbl_post"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opf-14-WEe">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="67.5"/>
+                                    <connections>
+                                        <action selector="opEditPost:" destination="iN0-l3-epB" eventType="touchUpInside" id="vGs-UD-baP"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Opf-14-WEe" firstAttribute="top" secondItem="K9X-rR-NCa" secondAttribute="top" id="5je-aO-nuo"/>
+                                <constraint firstItem="SKd-aw-B03" firstAttribute="leading" secondItem="K9X-rR-NCa" secondAttribute="leading" id="6iy-Nj-Hii"/>
+                                <constraint firstAttribute="trailing" secondItem="Opf-14-WEe" secondAttribute="trailing" id="Khe-Ci-yxk"/>
+                                <constraint firstAttribute="bottom" secondItem="SKd-aw-B03" secondAttribute="bottom" id="Mkz-vv-g84"/>
+                                <constraint firstItem="SKd-aw-B03" firstAttribute="top" secondItem="Opf-14-WEe" secondAttribute="bottom" id="NNZ-z6-dSk"/>
+                                <constraint firstItem="ceO-8v-stz" firstAttribute="leading" secondItem="K9X-rR-NCa" secondAttribute="leading" constant="32" id="Xmr-z0-3pC"/>
+                                <constraint firstItem="O71-Ev-dlH" firstAttribute="leading" secondItem="ceO-8v-stz" secondAttribute="trailing" constant="8" id="g6i-ZJ-eJr"/>
+                                <constraint firstAttribute="trailing" secondItem="SKd-aw-B03" secondAttribute="trailing" id="gGa-Do-0Iv"/>
+                                <constraint firstItem="ceO-8v-stz" firstAttribute="centerY" secondItem="K9X-rR-NCa" secondAttribute="centerY" id="jSN-V5-jWh"/>
+                                <constraint firstItem="O71-Ev-dlH" firstAttribute="centerY" secondItem="K9X-rR-NCa" secondAttribute="centerY" id="mYt-Mb-ZlX"/>
+                                <constraint firstAttribute="height" constant="68" id="oET-nz-47j"/>
+                                <constraint firstItem="Opf-14-WEe" firstAttribute="leading" secondItem="K9X-rR-NCa" secondAttribute="leading" id="toc-S5-pIm"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LC3-aA-rox">
+                            <rect key="frame" x="0.0" y="68" width="414" height="68"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="PWo-HA-qMU">
+                                    <rect key="frame" x="32" y="23" width="22" height="22"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Delete Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkh-YL-Xgo">
+                                    <rect key="frame" x="62" y="26" width="157" height="16"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
+                                    <color key="textColor" name="col_lbl_post"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0r-Yu-ms0">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                                    <connections>
+                                        <action selector="opDeletePost:" destination="iN0-l3-epB" eventType="touchUpInside" id="kOX-bg-BYH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="K0r-Yu-ms0" secondAttribute="bottom" id="9GA-Jh-rPN"/>
+                                <constraint firstItem="PWo-HA-qMU" firstAttribute="leading" secondItem="LC3-aA-rox" secondAttribute="leading" constant="32" id="DBx-jk-Ily"/>
+                                <constraint firstAttribute="trailing" secondItem="K0r-Yu-ms0" secondAttribute="trailing" id="EfZ-9F-HBd"/>
+                                <constraint firstAttribute="height" constant="68" id="HKU-Df-YTd"/>
+                                <constraint firstItem="K0r-Yu-ms0" firstAttribute="top" secondItem="LC3-aA-rox" secondAttribute="top" id="JS8-mT-pSi"/>
+                                <constraint firstItem="Jkh-YL-Xgo" firstAttribute="centerY" secondItem="LC3-aA-rox" secondAttribute="centerY" id="OOm-FZ-7UQ"/>
+                                <constraint firstItem="PWo-HA-qMU" firstAttribute="centerY" secondItem="LC3-aA-rox" secondAttribute="centerY" id="Rpn-Y7-Sif"/>
+                                <constraint firstItem="Jkh-YL-Xgo" firstAttribute="leading" secondItem="PWo-HA-qMU" secondAttribute="trailing" constant="8" id="jRS-3c-Z8s"/>
+                                <constraint firstItem="K0r-Yu-ms0" firstAttribute="leading" secondItem="LC3-aA-rox" secondAttribute="leading" id="zq0-uT-XuK"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mV-s2-yFA">
+                            <rect key="frame" x="137" y="206" width="140" height="50"/>
+                            <color key="backgroundColor" name="col_black_white"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="140" id="axL-dd-RZI"/>
+                                <constraint firstAttribute="height" constant="50" id="gG1-3d-buA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="16"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" name="col_btn_welcome"/>
+                            </state>
+                            <connections>
+                                <action selector="opDone:" destination="iN0-l3-epB" eventType="touchUpInside" id="nxf-Br-DGl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="K9X-rR-NCa" firstAttribute="top" secondItem="EKW-bb-te4" secondAttribute="top" id="8tw-BN-NjQ"/>
+                        <constraint firstItem="5mV-s2-yFA" firstAttribute="top" secondItem="LC3-aA-rox" secondAttribute="bottom" constant="70" id="LPd-nb-9LJ"/>
+                        <constraint firstItem="5mV-s2-yFA" firstAttribute="centerX" secondItem="EKW-bb-te4" secondAttribute="centerX" id="Lns-RA-qIu"/>
+                        <constraint firstItem="LC3-aA-rox" firstAttribute="leading" secondItem="EKW-bb-te4" secondAttribute="leading" id="NXp-Xg-t5H"/>
+                        <constraint firstItem="LC3-aA-rox" firstAttribute="top" secondItem="K9X-rR-NCa" secondAttribute="bottom" id="RsF-u4-0Hf"/>
+                        <constraint firstItem="K9X-rR-NCa" firstAttribute="leading" secondItem="EKW-bb-te4" secondAttribute="leading" id="ecz-Jt-ZJl"/>
+                        <constraint firstAttribute="height" constant="300" id="fcW-yi-RSe"/>
+                        <constraint firstAttribute="trailing" secondItem="LC3-aA-rox" secondAttribute="trailing" id="kCe-xw-Buv"/>
+                        <constraint firstAttribute="trailing" secondItem="K9X-rR-NCa" secondAttribute="trailing" id="rvd-UQ-djf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="EKW-bb-te4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9wA-SV-uNZ"/>
+                <constraint firstItem="EKW-bb-te4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d9R-zg-Mxm"/>
+                <constraint firstAttribute="trailing" secondItem="EKW-bb-te4" secondAttribute="trailing" id="du4-gv-yPp"/>
+                <constraint firstAttribute="bottom" secondItem="EKW-bb-te4" secondAttribute="bottom" id="xCB-D5-apg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn_done" destination="5mV-s2-yFA" id="Kgv-ja-8We"/>
+                <outlet property="v_out" destination="EKW-bb-te4" id="Lyt-JA-IdQ"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="128.57142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mic_alert" width="22" height="22"/>
+        <namedColor name="col_black_white">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="col_btn_welcome">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="col_lbl_post">
+            <color red="0.50196078431372548" green="0.52941176470588236" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="col_line_seperator">
+            <color red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="cell_new_post" customModule="HIVE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vBA-mO-jS7">
+                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tNP-jr-tRL">
+                                <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                            </imageView>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvd-v5-Elz">
+                                <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic_video_play" translatesAutoresizingMaskIntoConstraints="NO" id="3G5-Ve-UUJ">
+                                <rect key="frame" x="17" y="17" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Fny-iq-e3y"/>
+                                    <constraint firstAttribute="width" constant="38" id="cbq-wI-BS1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzb-H7-D2q">
+                                <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                <connections>
+                                    <action selector="opSelect:" destination="gTV-IL-0wX" eventType="touchUpInside" id="YO2-Tp-j6e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tNP-jr-tRL" secondAttribute="bottom" id="Ksx-A0-sRi"/>
+                            <constraint firstAttribute="bottom" secondItem="lzb-H7-D2q" secondAttribute="bottom" id="LNh-ft-CQ1"/>
+                            <constraint firstItem="rvd-v5-Elz" firstAttribute="top" secondItem="vBA-mO-jS7" secondAttribute="top" id="Nnv-tZ-umv"/>
+                            <constraint firstItem="rvd-v5-Elz" firstAttribute="leading" secondItem="vBA-mO-jS7" secondAttribute="leading" id="OZu-kn-Cc9"/>
+                            <constraint firstAttribute="trailing" secondItem="lzb-H7-D2q" secondAttribute="trailing" id="Qld-jb-jXr"/>
+                            <constraint firstItem="3G5-Ve-UUJ" firstAttribute="centerX" secondItem="vBA-mO-jS7" secondAttribute="centerX" id="SW2-aL-Lsk"/>
+                            <constraint firstAttribute="bottom" secondItem="rvd-v5-Elz" secondAttribute="bottom" id="b1U-FD-EF7"/>
+                            <constraint firstItem="tNP-jr-tRL" firstAttribute="top" secondItem="vBA-mO-jS7" secondAttribute="top" id="ePJ-1B-NyM"/>
+                            <constraint firstItem="tNP-jr-tRL" firstAttribute="leading" secondItem="vBA-mO-jS7" secondAttribute="leading" id="hxY-Hk-5xC"/>
+                            <constraint firstItem="lzb-H7-D2q" firstAttribute="top" secondItem="vBA-mO-jS7" secondAttribute="top" id="jop-fF-sCJ"/>
+                            <constraint firstItem="3G5-Ve-UUJ" firstAttribute="centerY" secondItem="vBA-mO-jS7" secondAttribute="centerY" id="lEj-6i-EGx"/>
+                            <constraint firstItem="lzb-H7-D2q" firstAttribute="leading" secondItem="vBA-mO-jS7" secondAttribute="leading" id="m7q-dN-2xg"/>
+                            <constraint firstAttribute="trailing" secondItem="tNP-jr-tRL" secondAttribute="trailing" id="nSb-kW-Gdq"/>
+                            <constraint firstAttribute="trailing" secondItem="rvd-v5-Elz" secondAttribute="trailing" id="yuy-hH-K7X"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vBA-mO-jS7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Nxs-ae-2z9"/>
+                <constraint firstAttribute="trailing" secondItem="vBA-mO-jS7" secondAttribute="trailing" id="Y24-Lc-1kq"/>
+                <constraint firstAttribute="bottom" secondItem="vBA-mO-jS7" secondAttribute="bottom" id="krE-ys-RAq"/>
+                <constraint firstItem="vBA-mO-jS7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="okx-ef-h9X"/>
+            </constraints>
+            <connections>
+                <outlet property="img_content" destination="tNP-jr-tRL" id="Cwv-qT-FfO"/>
+                <outlet property="img_play" destination="3G5-Ve-UUJ" id="gVP-HI-m2l"/>
+                <outlet property="v_out" destination="vBA-mO-jS7" id="ti9-m0-UR0"/>
+            </connections>
+            <point key="canvasLocation" x="-57" y="137"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mic_video_play" width="44" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

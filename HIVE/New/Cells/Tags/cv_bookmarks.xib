@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cv_bookmarks" id="iN0-l3-epB" customClass="cv_bookmarks" customModule="HIVE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bookmarks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oP9-gO-QMj">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="WGo-l5-cFj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8W-Ek-cS6" customClass="CollectionView" customModule="CollectionKit">
+                    <rect key="frame" x="0.0" y="32" width="414" height="112"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="112" id="dX7-gi-UZh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="q8W-Ek-cS6" firstAttribute="top" secondItem="oP9-gO-QMj" secondAttribute="bottom" constant="8" id="1tP-lI-Nzr"/>
+                <constraint firstItem="q8W-Ek-cS6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KuV-qX-r3A"/>
+                <constraint firstItem="oP9-gO-QMj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PFL-xC-st5"/>
+                <constraint firstItem="oP9-gO-QMj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eux-5a-XuC"/>
+                <constraint firstAttribute="trailing" secondItem="oP9-gO-QMj" secondAttribute="trailing" id="jAJ-S9-aFA"/>
+                <constraint firstAttribute="trailing" secondItem="q8W-Ek-cS6" secondAttribute="trailing" id="vhj-51-qjG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="q8W-Ek-cS6" id="N7K-4c-Zgl"/>
+            </connections>
+            <point key="canvasLocation" x="-57" y="90"/>
+        </view>
+    </objects>
+</document>
